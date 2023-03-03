@@ -1,0 +1,142 @@
+.App {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+#root {
+  min-width: 320px;
+  width: 100vw;
+  height: 100vh;
+}
+
+
+.left_sect {
+  height: 100%;
+  min-width: 680px;
+  width: 680px;
+  background: linear-gradient(180deg, #FFFFFF 0%, #F2F5FA 100%);
+  display: flex;
+  flex-direction: column;
+}
+
+.right_sect {
+
+  z-index: -1;
+  height: 101%;
+  width: 100%;
+  background: url('./assets/img/image_summer.png') no-repeat center center;
+  background-size: cover;
+}
+
+
+@media (max-width: 825px) {
+
+  .right_sect {
+    display: none;
+  }
+
+  .left_sect {
+    height: 100vh;
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    background: url('./assets/img/image_summer.png') no-repeat center center;
+    background-size: cover;
+  }
+
+
+}
+
+.link_box {
+  display: flex;
+
+  justify-content: center;
+
+  margin-left: 140px;
+  margin-right: 140px;
+}
+
+.soc_media {
+  width: 46px;
+  height: 46px;
+  border: 1px rgba(227, 227, 228, 1) solid;
+  margin: 10px 10px 0px 12px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.soc_media>div {
+  display: flex;
+  align-items: center;
+}
+
+
+#inst:hover {
+  background: #C13584;
+  box-shadow: 0px 20px 40px rgba(19, 24, 33, 0.3);
+
+}
+
+#inst:active {
+  background: #8F2762;
+  box-shadow: 0px 20px 40px rgba(19, 24, 33, 0.3);
+
+}
+
+#twit:hover {
+  background: #1DA1F2;
+  box-shadow: 0px 20px 40px rgba(19, 24, 33, 0.3);
+}
+
+#twit:active {
+  background: #177FBF;
+  box-shadow: 0px 20px 40px rgba(19, 24, 33, 0.3);
+}
+
+#yt:hover {
+  background: #FF0000;
+  box-shadow: 0px 20px 40px rgba(19, 24, 33, 0.3);
+}
+
+#yt:active {
+  background: #CC0000;
+  box-shadow: 0px 20px 40px rgba(19, 24, 33, 0.3);
+}
+
+#fb:hover {
+  background: #4267B2;
+  box-shadow: 0px 20px 40px rgba(19, 24, 33, 0.3);
+
+}
+
+#fb:active {
+  background: #2F4A80;
+  box-shadow: 0px 20px 40px rgba(19, 24, 33, 0.3);
+}
+
+#terms_text>a:active {
+  color: rgba(35, 55, 89, 1);
+}
+
+#fb:hover>div>svg>path {
+  fill: white !important;
+  opacity: 1 !important;
+}
+
+#inst:hover>div>svg>path {
+  fill: white !important;
+  opacity: 1 !important;
+}
+
+#twit:hover>div>svg>path {
+  fill: white !important;
+  opacity: 1 !important;
+}
+
+#yt:hover>div>svg>path {
+  fill: white !important;
+  opacity: 1 !important;
+}
